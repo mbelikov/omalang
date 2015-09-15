@@ -1,29 +1,41 @@
 # omalang
 Omalang (office manipulation language / oma's language)
+The main purpose creating such a library / tool is to ease the manipulating of the ODF (office) documents from a java code
 
 ## introduction
 I. Omalang model
 
-F01. base office docs algorithms (load, save, search for a text / [P], search for a table / [Table])
+        F01. base office docs algorithms (load, save, search for a text / [P], search for a table / [Table])
 
-F02. presentation / handling of 2 models: technical one (e.g. ODF representation), logical one (to use Omalang algorithms with)
-F03. the technical model should remain by the Omalang manipulations (incl. all non-significant artefacts, e.g. ole-objects, formatting etc.)
-F04. possible demarcation corresponding to the MVC pattern: model - "technical model", view - "logical model", controller - Omalang
+        F02. presentation / handling of 2 models: technical one (e.g. ODF representation), logical one (to use Omalang algorithms with)
 
-F05. a doc is either a vector or a matrix of [P]'s and [Table]'s
-F06. [P] := paragraph (text) (tech. model: it can contain separate text pieces along with some another objects between these pieces, e.g. ole-objects)
-F07. [Table] := table containing [P]'s
+        F03. the technical model should remain by the Omalang manipulations (incl. all non-significant artefacts, e.g. ole-objects, formatting etc.)
 
-F08. ability to construct a [P] and a [Table] (considering only the logical model)
-F09. ability to insert / to remove a [P] or a [Table] to / from a doc
-F10. ability to filter values from a vector / matrix to another vector / matrix
-F11. ability to compare / fuzzy-compare vectors and matrices
-F12. ability to subtract matrices / vectors
-F13. ability to intersect matrices / vectors
-F14. ability to replace / insert a vector to a matrix
-F15. ...
+        F04. possible demarcation corresponding to the MVC pattern: model - "technical model", view - "logical model", controller - Omalang
 
-a maven plugin :)
+        F05. a doc is either a vector or a matrix of [P]'s and [Table]'s
+
+        F06. [P] := paragraph (text) (tech. model: it can contain separate text pieces along with some another objects between these pieces, e.g. ole-objects)
+
+        F07. [Table] := table containing [P]'s
+
+        F08. ability to construct a [P] and a [Table] (considering only the logical model)
+
+        F09. ability to insert / to remove a [P] or a [Table] to / from a doc
+
+        F10. ability to filter values from a vector / matrix to another vector / matrix
+
+        F11. ability to compare / fuzzy-compare vectors and matrices
+
+        F12. ability to subtract matrices / vectors
+
+        F13. ability to intersect matrices / vectors
+
+        F14. ability to replace / insert a vector to a matrix
+
+        F15. ...
+
+        F99. a maven plugin :)
 
 II. Omalang DSL / execution runtime
 
