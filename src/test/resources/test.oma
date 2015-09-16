@@ -1,0 +1,12 @@
+exelDoc = load('ex_file_name.xlsx');
+wordDoc = load('word_file_name.docx');
+
+save('ex_new_file_name.xlsx', exelDoc);
+save('word_file_name.docx', wordDoc);
+
+s = excelDoc.row['SEAL Para-Name'];
+v = excelDoc.column['some value from column', 'another one value'];
+
+w = wordDoc.table['ILTF-Parameter', ].row['Name'];
+
+b = compare(s, w); // boolean
